@@ -1,8 +1,14 @@
+import { Footer } from './components/footer/footer';
+import { Header } from './components/header/header';
+import { AppRouter } from './router/app.routes';
+
 export function App() {
   return (
-    <div>
-      <h1>The Social Network</h1>
-    </div>
+    <>
+      <Header></Header>
+      <AppRouter></AppRouter>
+      <Footer></Footer>
+    </>
   );
 }
 
