@@ -1,8 +1,12 @@
+import { Footer } from './components/footer/footer';
+import { Header } from './components/header/header';
+
 export function App() {
   return (
-    <div>
-      <h1>The Social Network</h1>
-    </div>
+    <>
+      <Header></Header>
+      <Footer></Footer>
+    </>
   );
 }
 
