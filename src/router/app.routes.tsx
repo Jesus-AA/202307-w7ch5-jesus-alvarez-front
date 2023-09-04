@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Detail } from '../components/detail/detail';
 import { HomePage } from '../pages/home/home.page';
 import { LoginPage } from '../pages/login/login.page';
 import { RegisterPage } from '../pages/register/register.page';
@@ -13,6 +14,7 @@ export const AppRouter = () => {
         <Route path="/login" element={<LoginPage></LoginPage>}></Route>
         <Route path="/register" element={<RegisterPage></RegisterPage>}></Route>
         <Route path="/users" element={<UsersPage></UsersPage>}></Route>
+        <Route path="/detail/:id" element={<Detail></Detail>}></Route>
       </Routes>
     </Suspense>
   );
