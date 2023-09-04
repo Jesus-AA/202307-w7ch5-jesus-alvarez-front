@@ -15,7 +15,7 @@ export function Login() {
       password: (formElement.elements.namedItem('password') as HTMLFormElement)
         .value,
     };
-    console.log(userLogin);
+
     loginUser(userLogin);
   };
 

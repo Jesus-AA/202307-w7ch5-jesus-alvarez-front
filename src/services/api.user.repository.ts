@@ -6,8 +6,11 @@ export class ApiUserRepository {
     this.urlBase = urlBase;
   }
 
-  async getAll(url: string): Promise<User[]> {
-    const request = await fetch(url);
+  async getAll(url: string, token: unknown): Promise<User[]> {
+    const request = await fetch(url, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    console.log(request);
     if (!request.ok) {
       throw new Error(
         `Error ${request.status}: ${request.statusText}. Try again.`
@@ -48,6 +51,7 @@ export class ApiUserRepository {
       headers: { 'Content-Type': 'application/json' },
     });
     const data = await response.json();
+
     return data;
   }
 

@@ -1,6 +1,7 @@
 export type UserLoginData = {
   userName: string;
   password: string;
+  token?: string;
 };
 
 export type UserNoId = UserLoginData & {
