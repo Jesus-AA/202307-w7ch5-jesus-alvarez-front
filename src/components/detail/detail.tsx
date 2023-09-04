@@ -23,7 +23,7 @@ export function Detail() {
         role="button"
         id="backbutton"
         className={styles['back-button']}
-        to={'/'}
+        to={'/login'}
       >
         Back
       </Link>

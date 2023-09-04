@@ -4,7 +4,6 @@ import { useUsers } from '../../hooks/useUsers';
 
 export function LoginPage() {
   const { usersState } = useUsers();
-  usersState.token;
 
   if (usersState.token === false) {
     return <Login></Login>;
